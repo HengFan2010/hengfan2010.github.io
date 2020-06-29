@@ -1,1 +1,257 @@
-This is a test My name is GGffff
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://cse.buffalo.edu/~jmeng2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./page_files/analytics.js.download"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-3974203-1', 'auto'); ga('send', 'pageview');</script>
+    
+    <title>Homepage Heng Fan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./page_files/global.css">
+    <link rel="stylesheet" type="text/css" href="./page_files/navigation.css">
+	<link rel="stylesheet" type="text/css" href="./page_files/home.css">
+	<style>a{ TEXT-DECORATION:none}a:hover{TEXT-DECORATION:underline }</style>
+	<!-- <style>a{ TEXT-DECORATION:none }</style>-->   <!-- change style for hyperlink -->
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<div class="navi central_body">
+    <a class="navi navi_active" href="./index.html">Home</a>
+    <a class="navi" href="./publications.html">Full Publications</a>
+    <a class="navi" href="./teaching.html">Teaching</a>
+    <a class="navi" href="./service.html">Professional Activities</a>
+</div>
+
+<div class="navi_bar"></div>
+
+<div class="central_body">
+
+    <div class="photo_intro">
+        <img src="./personal/heng.jpg" alt="Heng Fan" class="photo">
+        <div class="intro">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="intro_name"><font size="5">Heng Fan</font></span>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PhD student
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.cs.stonybrook.edu/"><font color="#0099ff">Department of Computer Science</font></a>, <a href="http://www.stonybrook.edu/"><font color="#0099ff">Stony Brook University</font></a>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Office: Room 138, New Computer Science Bldg, Stony Brook, NY 11794
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: hefan<img height="13" width="13"
+src="personal/at.gif">cs.stonybrook.edu    
+			<br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<a href="personal/cv-hengfan.pdf" target="_blank"><font color="#0099ff">Curriculum Vitae</font></a>]
+			[<a href="https://scholar.google.com/citations?user=MVQYJiMAAAAJ" target="https://scholar.google.com/citations?user=MVQYJiMAAAAJ"><font color="#0099ff">Google Scholar</font></a>]
+			[<a href="https://www.linkedin.com/in/%E6%81%92-%E6%A8%8A-64697aaa/" target="https://www.linkedin.com/in/%E6%81%92-%E6%A8%8A-64697aaa/"><font color="#0099ff">LinkedIn</font></a>]
+			[<a href="https://www.researchgate.net/profile/Heng_Fan2" target="https://www.researchgate.net/profile/Heng_Fan2"><font color="#0099ff">ResearchGate</font></a>]
+        </div>
+    </div>
+	
+	<HR>
+	
+    <font size="4" color="#034f84"><b>Short Bio</b></font>
+    <p style="margin-top:5px;"><font>I am a PhD student in <a href="https://www.cs.stonybrook.edu/"><font color="#0099ff">Department of Computer Science</font></a>, <a href="http://www.stonybrook.edu/"><font color="#0099ff">Stony Brook University</font></a>, 
+	         advised by Prof. <a href="https://www3.cs.stonybrook.edu/~hling/"><font><font color="#0099ff">Haibin Ling</font></font></a>. Prior to this, I spent two and a half years as a master student (course completed) in <a href="http://www.hzau.edu.cn/en/HOME.htm"><font color="#0099ff">Huazhong Agricultural University</font></a>, where I worked closely 
+			 with Prof. <a href="http://coi.hzau.edu.cn/info/1123/3709.htm" target="_blank"><font color="#0099ff">Jinhai Xiang</font></a>. I received my B.S. degree from <a href="http://www.hzau.edu.cn/en/HOME.htm"><font color="#0099ff">Huazhong Agricultural University</font></a> in 2013.</font></p>
+    
+	<HR>
+	
+	<font size="4" color="#034f84"><b>News</b></font>
+    <ul style="margin-top:5px;">
+		<li><font style="font-weight:bold; line-height: 120%">2020-06:</font> We are organizing <a href="http://uavisionvisdrone.com/#/index/home/"><font color="#0099ff">VisDrone 2020</font></a>, in conjunction ECCV 2020. <a href="http://uavisionvisdrone.com/#/index/submission"><font color="#0099ff">Submissions</font></a> are welcome.</li>
+		<li><font style="font-weight:bold; line-height: 120%">2020-01:</font> <font>After four years at Temple University, I moved to <a href="http://www.stonybrook.edu/"><font color="#0099ff">Stony Brook University</font></a> to continue my study.</font></li>
+    </ul>
+	
+	<HR>
+	
+	<font size="4" color="#034f84"><b>Selected Publications</b></font> <font size="3"> 
+	<br>
+	For all papers, go to <a href="./publications.html"><font color="#0099ff">full publications</font></a> or <a href="https://scholar.google.com/citations?user=MVQYJiMAAAAJ"><font color="#0099ff">gScholar</font></a></font>
+	<br>
+	
+    <ul style="margin-top:5px;">
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Robust and Efficient Graph Correspondence Transfer for Person Re-identification</font>
+				<br>
+				<font color="#000000" >Qin Zhou, <b>Heng Fan</b>, Hua Yang, Hang Su, Shibao Zheng, Shuang Wu, and Haibin Ling</font>
+				<br>
+				<font>IEEE Transactions on Image Processing (<b>T-IP</b>), 2020. (in press)</font>
+				<br>
+				<font><a href="publication\TIP-19-b.pdf" target="_blank"><font color="#0099ff">paper</font></a> &nbsp; <a href="https://drive.google.com/file/d/1rt7DpXJIvRVCya463gt2jqxl71xy5o7J/view" target="_blank"><font color="#0099ff">code</font></a></font>
+				<br>
+			</p>
+		</li>
+	
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Parallel Tracking and Verifying</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b> and Haibin Ling</font>
+				<br>
+				<font>IEEE Transactions on Image Processing (<b>T-IP</b>), 28(8): 4130-4144, 2019.</font>
+				<br>
+				<font><a href="publication\TIP-19-a.pdf" target="_blank"><font color="#0099ff">paper</font></a> &nbsp; <a href="http://www.dabi.temple.edu/~hbling/code/PTAV/ptav.htm" target="_blank"><font color="#0099ff">code</font></a></font>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Clustered Object Detection in Aerial Images</font>
+				<br>
+				<font color="#000000" >Fan Yang, <b>Heng Fan</b>, Peng Chu, Erik Blasch, and Haibin Ling</font>
+				<br>
+				<font>IEEE International Conference on Computer Vision (<b>ICCV</b>), 2019.</font>
+				<br>
+				<a href="publication\ICCV-19.pdf" target="_blank"><font color="#0099ff">paper</font></a> &nbsp; <a href="https://drive.google.com/file/d/1IrrU937Vdki4ibN6lAAi7FQ-yx4CWjJw/view" target="_blank"><font color="#0099ff">supplementary</font></a> &nbsp; <a href="https://github.com/fyangneil/Clustered-Object-Detection-in-Aerial-Image" target="_blank"><font color="#0099ff">code</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Siamese Cascaded Region Proposal Networks for Real-Time Visual Tracking</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b> and Haibin Ling</font>
+				<br>
+				<font>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</font>
+				<br>
+				<a href="publication\CVPR-19-a.pdf" target="_blank"><font color="#0099ff">paper</font></a> &nbsp; <a href="http://www.dabi.temple.edu/~hbling/code/CRPN/crpn.htm" target="_blank"><font color="#0099ff">code</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">LaSOT: A High-quality Benchmark for Large-scale Single Object Tracking</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b>, Liting Lin, Fan Yang, Peng Chu, Ge Deng, Sijia Yu, Hexin Bai, Yong Xu, Chunyuan Liao, and Haibin Ling</font>
+				<br>
+				<font>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</font>
+				<br>
+				<a href="publication\CVPR-19-b.pdf" target="_blank"><font color="#0099ff">paper</font></a> &nbsp; <a href="https://cis.temple.edu/lasot/" target="_blank"><font color="#0099ff">code and benchmark</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Scene Parsing via Dense Recurrent Neural Networks with Attentional Selection</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b>, Peng Chu, Longin Jan Latecki, and Haibin Ling</font>
+				<br>
+				<font>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2019.</font> (<font color="#CC0000"><b>oral presentation with early accept</b></font>)
+				<br>
+				<a href="publication\WACV-19-a.pdf" target="_blank"><font color="#0099ff">paper</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Online Multi-Object Tracking with Instance-Aware Tracker and Dynamic Model Refreshment</font>
+				<br>
+				<font color="#000000" >Peng Chu, <b>Heng Fan</b>, Chiu C. Tan, and Haibin Ling</font>
+				<br>
+				<font>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2019.</font> (<font color="#CC0000"><b>oral presentation with early accept</b></font>)
+				<br>
+				<a href="publication\WACV-19-b.pdf" target="_blank"><font color="#0099ff">paper</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Multi-level Contextual RNNs with Attention Model for Scene Labeling</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b>, Xue Mei, Danil Prokhorov, and Haibin Ling</font>
+				<br>
+				<font>IEEE Transactions on Intelligent Transportation Systems (<b>T-ITS</b>), 19(11): 3475-3485, 2018.</font>
+				<br>
+				<font><a href="publication\TITS-18.pdf" target="_blank"><font color="#0099ff">paper</font></a></font>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Graph Correspondence Transfer for Person Re-identification</font>
+				<br>
+				<font color="#000000" >Qin Zhou, <b>Heng Fan</b>, Shibao Zheng, Hang Su, Xinzhe Li, Shuang Wu, and Haibin Ling</font>
+				<br>
+				<font>AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2018.</font> (<font color="#CC0000"><b>oral presentation</b></font>)
+				<br>
+				<a href="publication\AAAI-18.pdf" target="_blank"><font color="#0099ff">paper</font></a> &nbsp; <a href="https://drive.google.com/file/d/1rt7DpXJIvRVCya463gt2jqxl71xy5o7J/view" target="_blank"><font color="#0099ff">code</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Parallel Tracking and Verifying: A Framework for Real-Time and High Accuracy Visual Tracking</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b> and Haibin Ling</font>
+				<br>
+				<font>IEEE International Conference on Computer Vision (<b>ICCV</b>), 2017.</font>
+				<br>
+				<a href="publication\ICCV-17.pdf" target="_blank"><font color="#0099ff">paper</font></a> &nbsp; <a href="publication\ICCV17-poster.pdf" target="_blank"><font color="#0099ff">poster</font></a> &nbsp; <a href="publication\ICCV17-slide.pdf" target="_blank"><font color="#0099ff">slide</font></a> &nbsp; <a href="http://www.dabi.temple.edu/~hbling/code/PTAV/ptav.htm" target="_blank"><font color="#0099ff">code</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Robust Visual Tracking via Local-Global Correlation Filter</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b> and Jinhai Xiang</font>
+				<br>
+				<font>AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2017.</font> (<font color="#CC0000"><b>oral presentation</b></font>)
+				<br>
+				<a href="publication\AAAI-17.pdf" target="_blank"><font color="#0099ff">paper</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">SANet: Structure-Aware Network for Visual Tracking</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b> and Haibin Ling</font>
+				<br>
+				<font>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>) Workshop, 2017.</font> (<font color="#CC0000"><b>oral presentation</b></font>)
+				<br>
+				<a href="publication\CVPRW-17.pdf" target="_blank"><font color="#0099ff">paper</font></a> &nbsp; <a href="http://www.dabi.temple.edu/~hbling/code/SANet/SANet.html" target="_blank"><font color="#0099ff">code</font></a>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<p style="line-height: 120%; margin-top: 5px; margin-bottom: 5px;">
+				<font style="font-weight:bold">Robust Visual Tracking with Multitask Joint Dictionary Learning</font>
+				<br>
+				<font color="#000000" ><b>Heng Fan</b> and Jinhai Xiang</font>
+				<br>
+				<font>IEEE Transactions on Circuits and Systems for Video and Technology (<b>T-CSVT</b>), 27(5): 1018-1030, 2017.</font>
+				<br>
+				<font><a href="publication\TCSVT-17.pdf" target="_blank"><font color="#0099ff">paper</font></a></font> &nbsp; <a href="project\MJDL\MJDL.htm" target="_blank"><font color="#0099ff">project</font></a>
+				<br>
+			</p>
+		</li>
+		
+    </ul>
+	
+	
+	<HR>
+	
+	<font size="4" color="#034f84"><b>Selected Honors and Awards</b></font>
+    <ul style="margin-top:5px;">
+		<li><font style="line-height: 120%">CVPR 2019 Outstanding Reviewer Award, 2019</font></li>
+		<li><font style="line-height: 120%">National Scholarship for Graduate, 2015</font></li>
+		<li><font style="line-height: 120%">Honorable Mention in Mathematical Contest in Modeling (USA), 2012</font></li>
+		<li><font style="line-height: 120%">National Motivation Scholarship for Undergraduate, 2012</font></li>
+		<li><font style="line-height: 120%">National Scholarship for Undergraduate, 2011</font></li>
+    </ul>
+	
+</div>
+
+</body></html>
