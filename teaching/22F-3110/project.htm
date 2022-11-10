@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://cse.buffalo.edu/~jmeng2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./page_files/analytics.js.download"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-3974203-1', 'auto'); ga('send', 'pageview');</script>
+    
+    <title>Data Structures and Algorithms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../stylefiles/global.css">
+    <link rel="stylesheet" type="text/css" href="../../stylefiles/navigation.css">
+	<link rel="stylesheet" type="text/css" href="../../stylefiles/home.css">
+	<link rel="shortcut icon" href="../../personal/favicon.ico" />
+	<style>a{ TEXT-DECORATION:none}a:hover{TEXT-DECORATION:underline }</style>
+	<!-- <style>a{ TEXT-DECORATION:none }</style>-->   <!-- change style for hyperlink -->
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<style type="text/css">
+div img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+div img:hover{
+  transform: scale(1.8);
+}
+.underlinedist{ padding-bottom:3px; border-bottom:1px solid #000} 
+</style>
+
+
+<div class="central_body">
+	
+	
+	
+    <font size="5"><center><b>CSCE 3110 - Data Structures and Algorithms</b></center></font>
+
+	
+    <p style="margin-top:5px;">
+	<center>
+	<font size="4"> <b>Fall 2022</b></font> &nbsp; &nbsp; 
+	<br>
+	<br>
+	<font size="4"> <b>Course Project: World Airline Route Search</b></font> &nbsp; &nbsp; 
+	<br>
+	</center>
+	</p>
+
+	<HR>
+	
+	
+		<p style="margin-top:5px;">
+		<font size="4"> <b>Due date and grade:</b></font> <br>
+		</p>
+		
+		<ul>
+			<li>
+				Due date: Dec. 9, 2022 (<font color="red">No late submissions are accepted!</font>) <br><br>
+			</li>
+			<li>
+				Full points: 100 (report: 40 points, code: 60 points)
+			</li>
+		</ul>
+	
+	<HR>
+	
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Introduction:</b></font> <br>
+	</p>
+	
+	<p style="text-align:justify">
+
+	<font size="4"> In this project, you will be designing and implementing algorithms to store and search graphs. World Airline (WA) flies to many destinations worldwide including: Moscow, Seoul, Tokyo, Hong Kong, and London. 
+	Complete detailed information regarding airline flight routes can be found from the link <a href="http://www.cse.unt.edu/~huangyan/3110/Assignments/Project/graphGenerator/flight.txt" target="_blank"><font color="#0099ff">flight.txt</font></a>. 
+	The flight.txt contains a “from  city” and its destination cities that WA flights to. Note that the flight.txt is 
+	a synthetically generated datasets by a graph data generator available from the link <a href="http://www.cse.unt.edu/~huangyan/3110/Assignments/Project/graphGenerator" target="_blank"><font color="#0099ff">graphGen</font></a>. You may want to download the graph generator and generate a few more graphs with different number of cities 
+	to test your algorithms.</font>
+	</p>
+
+
+	<HR>
+	
+	
+		<p style="margin-top:5px;">
+		<font size="4"> <b>Your job:</b></font> <br>
+		</p>
+		
+		<p style="text-align:justify">
+		<font size="4"> Your task is to design and implement algorithms to answer the following questions:</font>
+		</p>
+
+		<ol>
+			<li>
+				I am in city “A”, can I fly to city  “B”  with less than x connections? Give me the route with the smallest number of connections or tell me there is no such a route.
+			</li>
+			<br>
+			<li>
+				Give me the route with the smallest number of connections from city “A” to city “D” through city “B” and “C”. (the order of  “B” and “C” is not important). Or tell me there is no such a route.
+			</li>
+			<br>
+			<li>
+				I am in city “A”, my friend John is in a different city “B”, and my other friend Ann is in yet another different city “C”. We want to find a city different from the three cities we are in to meet so that the total number of connections among three of us is 
+				minimized. Tell me the city we should fly to and the routes for us or tell me there is no such a city.
+			</li>
+		</ol>
+
+		You will need to process the documents and store their content in the data structures that you selected. Next, for every question, you will search your data structure using an algorithm of your choice. You have the freedom to select the data structures and algorithms that you consider to be more efficient for the tasks. Of course, you will have to justify your decisions. No fancy user interface is expected (fancy interface may be counted towards extra credits though).  
+		You program should take a few parameters with the first as the number of the question (1-4). The rest of the parameters and output of the four questions (1-4) are described as follows assuming your program is called routeSearch:
+
+		<ol>
+			<li>
+				routeSearch 1 &lt;city_A&gt; &lt;city_B&gt; &lt;num_connection&gt;
+				<br>
+				sample output:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;city_A to city_x to city_y … to city_B
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total connection: 4
+			</li>
+			<br>
+			<li>
+				usage: routeSearch 2 &lt;city_A&gt; </span>through &lt;city_B&gt; and &lt;city_C&gt; to &lt;city_D&gt;
+				<br>
+				sample output:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;city_A to city_x to city_C to city_y  … to city_B to city_D
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;smallest number of connection: 4
+			</li>
+			<br>
+			<li>
+				usage: routeSearch 3 &lt;city_A&gt; &lt;city_B&gt;  </span>&lt;city_C&gt
+				<br>
+				sample output:
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You three should meet at city_D
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route for first person: city_A to city_x  … to city_D (3 connections)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Route for second person: city_B to city_y  … to city_D (1 connections)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Route for second person: city_C to city_y  … to city_D (0 connections)
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Total  number of connection: 4
+			</li>
+		</ol>
+
+		<b>Note:</b> if it takes too long for your program to finish the tasks, try to generate smaller graphs using the provided graphGen.cpp.
+	
+	<HR>
+	
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>What to turn in:</b></font> <br>
+	</p>
+			
+	<p style="text-align:justify">
+	<font size="4"> There are two main parts in this project, all of them contributing to the final project grade.</font>
+	</p>
+
+	<ol>
+		<li>You will have to write a project report (about 3-5 typed pages – single space – 12pt font) that includes:</li>
+		<ul>
+			<li>
+				design issues, what are the problems and how you solve them
+			</li>
+			<li>
+				data structures you use, the decision behind selecting them
+			</li>
+			<li>
+				algorithms you employ, again with a justification of your decision
+			</li>
+			<li>
+				particular emphasis should be placed on the running time of your algorithm, please show the asymptotic costs for each of your algorithm
+			</li>
+			<li>
+				optimization issues: what could you do to further optimize your algorithm
+			</li>
+			<li>
+				you need to specifically address the problem of scalability: would you implementation be efficient in the case of very large species collections for larger scale geographic area?
+			</li>
+			<li>
+				any other remarks about your design and implementation
+			</li>
+		</ul>
+		<br>
+		<li>
+			You will have to send in a fully working program, written in C/C++. We will test your algorithms extensively by generating graphs with different characteristics. It is mandatory that you include a README file, as detailed as possible, 
+			including compilation and running instructions.  Is it also mandatory that your programs are fully documented, that is they should include detailed comments on what is included in each file and what each method does. 
+		</li>
+	</ol>
+
+	<font size="4" color="red"> Submission:</font> Submit a PDF report and a single zip file for your code to Canvas.
+
+	<HR>
+	
+	
+		<p style="margin-top:5px;">
+		<font size="4"> <b>Notes:</b></font> 
+		</p>
+				
+		<p style="text-align:justify">
+		<font size="4" color="red"> No late submissions are accepted!.</font>
+		</p>
+	<HR>
+</div>
+
+</body></html>
