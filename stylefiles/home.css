@@ -4,9 +4,8 @@ div.photo_intro {
 
 img.photo {
     display: inline-block;
-    width: 11em; height: 11em;
     vertical-align: bottom;
-    margin-right: 0.5em;
+    margin-right: 0.1em;
     margin-bottom: 0.4em;
 }
 
