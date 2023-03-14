@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://cse.buffalo.edu/~jmeng2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./page_files/analytics.js.download"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-3974203-1', 'auto'); ga('send', 'pageview');</script>
+    
+    <title>PlanarTrack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylefiles/global.css">
+    <link rel="stylesheet" type="text/css" href="stylefiles/navigation.css">
+	<link rel="stylesheet" type="text/css" href="stylefiles/home.css">
+	<link rel="shortcut icon" href="pictures/PT.ico" />
+	<style>a{ TEXT-DECORATION:none}a:hover{TEXT-DECORATION:underline }</style>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif
+		}
+	</style>
+	<!-- <style>a{ TEXT-DECORATION:none }</style>-->   <!-- change style for hyperlink -->
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<style type="text/css">
+div img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+div img:hover{
+  transform: scale(1.8);
+}
+.underlinedist{ padding-bottom:3px; border-bottom:1px solid #000} 
+</style>
+
+
+<div class="central_body">
+	
+	<br>
+	<br>
+    <font size="6" color="black"><center><b><i>PlanarTrack</i>: A Large-scale Challenging Benchmark for Planar Object Tracking</b></center></font>
+    <p style="margin-top:5px;">
+
+	<center>
+
+	<font size="4"> <font color="#0099ff">Xinran Liu</font>* &nbsp; &nbsp; &nbsp; &nbsp;</font> 
+	<font size="4"> <font color="#0099ff">Xiaoqiong Liu</font>* &nbsp; &nbsp; &nbsp; &nbsp;</font> 
+	<font size="4"> <font color="#0099ff">Ziruo Yi</font>* &nbsp; &nbsp; &nbsp; &nbsp;</font> 
+	<font size="4"> <font color="#0099ff">Xin Zhou</font>* &nbsp; &nbsp; &nbsp; &nbsp;</font> 
+	<font size="4"> <font color="#0099ff">Thanh Le</font> &nbsp; &nbsp; &nbsp; &nbsp;</font> 
+	<font size="4"> <a href="https://isrc.iscas.ac.cn/zhanglibo/" target="https://isrc.iscas.ac.cn/zhanglibo/"><font color="#0099ff">Libo Zhang</font></a> &nbsp; &nbsp; &nbsp; &nbsp;</font> <br>
+	<font size="4"> <a href="http://www.cse.unt.edu/~huangyan/" target="http://www.cse.unt.edu/~huangyan/"><font color="#0099ff">Yan Huang</font></a> &nbsp; &nbsp; &nbsp; &nbsp;</font> 
+	<font size="4"> <a href="http://www.cse.unt.edu/~qingyang/" target="http://www.cse.unt.edu/~qingyang/"><font color="#0099ff">Qing Yang</font></a> &nbsp; &nbsp; &nbsp; &nbsp;</font> 
+	<font size="4"> <a href="https://hengfan2010.github.io/" target="https://hengfan2010.github.io/"><font color="#0099ff">Heng Fan</font></a></font> 
+
+	<br>
+	<br>
+	<font size="4" color="gray"> Institute of Software, CAS    &nbsp;  &nbsp; &nbsp; Dept. of Computer Science & Engineering, UNT   &nbsp;  &nbsp; (*Equal Contribution)</font>
+	<br> <br>
+	<font style="font-size:20px">[<img style="pointer-events: none; vertical-align: middle;" src="./pictures/arxiv.png" width="23" height="23"> <a href="https://hengfan2010.github.io/" target="https://hengfan2010.github.io/"><font color="#2E64FE">Paper</font></a>]</font> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
+	<font style="font-size:20px">[<img style="pointer-events: none; vertical-align: middle;" src="./pictures/data.png" width="23" height="23"> <a href="https://hengfan2010.github.io/" target="https://hengfan2010.github.io/"><font color="#2E64FE">Dataset (coming soon...)</font></a>]</font>  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
+	<font style="font-size:20px">[<img style="pointer-events: none; vertical-align: middle;" src="./pictures/github.png" width="23" height="23"> <a href="https://hengfan2010.github.io/" target="https://hengfan2010.github.io/"><font color="#2E64FE">Code (coming soon...)</font></a>]</font>
+	<br>
+
+	</center>
+	</p>
+	
+
+	
+	<HR style="width:98%;margin:0 auto;border: 0;height: 1.5px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(25, 35, 218, 0.64), rgba(0, 0, 0, 0))">
+	<br>
+
+	<p style="margin-top:5px;">
+
+	<center>
+	<font style="font-size:28px"> <b>Abstract</b></font> <br> <br>
+	</p>
+
+
+	<center>
+		<img src="./pictures/fig1.png" width="810">
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+			<b>Planar object tracking that aims at estimating the 2D transformation of the planar object in videos.</b>
+		</p>
+	</center>
+
+	<br>
+	
+	
+	<p style="margin-top:5px;text-align:justify">
+	<font style="font-size:18px"> Planar object tracking (see the above Figure 1 for illustration) is a critical computer vision problem and has drawn increasing interest owing to its key roles in robotics, augmented reality, etc. Despite rapid progress, its further development, 
+		especially in the deep learning era, is largely hindered due to the lack of large-scale challenging benchmarks. Addressing this, we propose PlanarTrack, a large-scale challenging planar object tracking benchmark. Specifically, 
+		PlanarTrack consists of 1,000 sequences with more than 490K images. All these videos are collected in complex unconstrained scenarios from the wild, which makes PlanarTrack, compared to existing benchmarks, more challenging but 
+		realistic for real-world applications. To the best of our knowledge, PlanarTrack, to date, is the largest and most challenging dataset dedicated to planar tracking. To analyze the proposed PlanarTrack, we evaluate 10 planar trackers and conduct comprehensive comparisons and in-depth analysis. 
+		Our results, not surprisingly, demonstrate that current top-performing planar trackers degenerate significantly on the challenging PlanarTrack and more efforts are needed to improve planar tracking in future. Besides, we 
+		further derive a variant named PlanarTrack-BB for generic tracking from PlanarTrack. Our evaluation of 10 generic trackers shows that, surprisingly, 
+		PlanarTrack-BB is even more challenging than several popular generic tracking benchmarks and more attention should be paid to handle such planar objects, though they are rigid. 
+
+		<br>
+		<br>
+		<b style="font-size:20px; color: rgb(8, 166, 68);">Highlights:</b>
+		<ul style="line-height:150%; ">
+			<li style="text-align:justify"><b style="color: rgb(8, 166, 68); font-style:italic;">Scale:</b> PlanarTrack is to date the largest planar tracking benchmark with 1,000 videos from the wild</li>
+			<li style="text-align:justify"><b style="color: rgb(8, 166, 68); font-style:italic;">Diversity:</b> PlanarTrack includes 1,000 planar targets that are unique in each video for tracking</li>
+			<li style="text-align:justify"><b style="color: rgb(8, 166, 68); font-style:italic;">Challenge:</b> All the video sequences in PlanarTrack are captured in unconstrained conditions</li>
+			<li style="text-align:justify"><b style="color: rgb(8, 166, 68); font-style:italic;">PlanarTrack<sub>BB</sub>:</b> A new PlanarTrack<sub>BB</sub> is derived from PlanarTrack for geneirc tracking</li>
+		</ul>
+	</font>
+	</p>
+    
+	<br>
+
+
+	<HR style="width:98%;margin:0 auto;border: 0;height: 1.5px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(25, 35, 218, 0.64), rgba(0, 0, 0, 0))">
+	<br>
+		
+	<p style="margin-top:5px;">
+	<center>
+		<font style="font-size:28px"> <b>Visualization</b></font> <br><br>
+	</center>
+	</p>
+
+	<center>
+		
+		<div id="teaser-videos-container">
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./videos/Seq_00192.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./videos/Seq_00364.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./videos/Seq_00415.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./videos/Seq_00423.mp4"></video>
+			<br>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./videos/Seq_00431.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./videos/Seq_00443.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./videos/Seq_00455.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./videos/Seq_00527.mp4"></video>
+		</div>
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+			<b>Videos from the proposed PlanarTrack.</b>
+		</p>
+	</center>
+
+		<br>
+
+
+
+	
+	<HR style="width:98%;margin:0 auto;border: 0;height: 1.5px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(25, 35, 218, 0.64), rgba(0, 0, 0, 0))">
+	<br>
+	
+	<p style="margin-top:5px;">
+	<center>
+		<font style="font-size:28px"> <b>Comparison and Statistics</b></font> <br><br>
+	</center>
+	</p>
+	<br>
+
+
+	<center>
+		<img src="./pictures/fig2.png" width="810">
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+			<b>Comparison of PlanarTrack with other existing palanr tracking benchmarks.</b>
+		</p>
+	</center>
+	<br>
+
+	<center>
+		<img src="./pictures/fig3.png" width="810">
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+			<b>Comparison of PlanarTrack with the popular POT-210 on statistics.</b>
+		</p>
+	</center>
+	<br>
+
+	<center>
+		<img src="./pictures/fig4.png" width="700">
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+			<b>Statisctis on challenging factors and comparison of training/test sets.</b>
+		</p>
+	</center>
+
+	<br>
+	
+	<HR style="width:98%;margin:0 auto;border: 0;height: 1.5px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(25, 35, 218, 0.64), rgba(0, 0, 0, 0))">
+	<br>
+	
+	
+	
+	
+	<p style="margin-top:5px;">
+	<center>
+		<font style="font-size:28px"> <b>Experiments</b></font></font> <br><br>
+	</center>
+	</p>
+	
+	<center>
+	<img src="./pictures/fig5.png" width="550">
+	<p style="margin-top:5px;color: gray; font-style:italic;">
+	  <b>Overall performance of evaluated trackers on PlanarTrack using precision and success. Please refer to the <a href="https://hengfan2010.github.io/" target="https://hengfan2010.github.io/"><font color="#2E64FE">paper</font></a> for details of the evaluated trackers.</b>
+	</p>
+	</center>
+	<br>
+	
+	<center>
+		<img src="./pictures/fig6.png" width="820">
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+		  <b>Evaluation on the two most common and the most two difficult challenging factors using precision.</b>
+		</p>
+	</center>
+	<br>
+
+	<center>
+		<img src="./pictures/fig7.png" width="820">
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+		  <b>Comparison of different trackers on PlanarTrack and POT-210.</b>
+		</p>
+	</center>
+	<br>
+
+	<center>
+		<img src="./pictures/fig8.png" width="820">
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+		  <b>Evaluation on PlanarTrack<sub>BB</sub> and comparison with LaSOT and TrackingNet.</b>
+		</p>
+	</center>
+	<br>
+	
+	<HR style="width:98%;margin:0 auto;border: 0;height: 1.5px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(25, 35, 218, 0.64), rgba(0, 0, 0, 0))">
+	<br>
+	
+	<p style="margin-top:5px;">
+	<center>
+		<font style="font-size:28px"> <b>Visualization of Tracking Results</b></font></font> <br><br>
+	</center>
+	</p>
+
+	<center>
+		
+		<div id="teaser-videos-container">
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./res_videos/Seq_00023.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./res_videos/Seq_00244.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./res_videos/Seq_00341.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./res_videos/Seq_00361.mp4"></video>
+			<br>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./res_videos/Seq_00696.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./res_videos/Seq_00787.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./res_videos/Seq_00942.mp4"></video>
+			<video width="205"  loop="" autoplay="" playsinline="" muted="" class="figure-img img-fluid" src="./res_videos/Seq_00970.mp4"></video>
+		</div>
+
+		<img style="pointer-events: none;" src="./pictures/label.png" width="700">
+
+		<p style="margin-top:5px;color: gray; font-style:italic;">
+			<b>Qualitative video results of top-six trackers on PlanarTrack.</b>
+		</p>
+	</center>
+
+	<br>
+
+	<HR style="width:98%;margin:0 auto;border: 0;height: 1.5px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(25, 35, 218, 0.64), rgba(0, 0, 0, 0))">
+	<br>
+	
+	<table align=center width=1100px>
+  			<tr>
+  	            <td>
+  				<left>
+					<code>
+					@inproceedings{liu2023planartrack, <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title={PlanarTrack: A Large-scale Challenging Benchmark for Planar Object Tracking}, <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; author={Liu, Xinran and Liu, Xiaoqiong and Yi, Ziruo and Zhou, Xin and Le, Thanh and <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zhang, Libo and Huang, Yan and Yang, Qing and Fan, Heng}, <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; booktitle={arXiv},<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year={2023}<br>
+					}
+					</code>
+				</left>
+				</td>
+			</tr>
+	</table>
+	
+	<br>
+
+	<HR style="width:98%;margin:0 auto;border: 0;height: 1.5px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(25, 35, 218, 0.64), rgba(0, 0, 0, 0))">
+		<br>
+
+
+		<p style="margin-top:5px;text-align:justify">
+			<font style="font-size:16px"> <b>License and Contact:</b> The dataset of our PlanarTrack is available for non-commercial research purposes only. If you have any question about the usage of PlanarTrack, please contact Libo Zhang or Heng Fan. If you have any questions about the dataset, please contact Xinran Liu at liuxinran@iscas.ac.cn. </font>
+			</p>
+
+	 
+	<HR style="width:98%;margin:0 auto;border: 0;height: 1.5px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(25, 35, 218, 0.64), rgba(0, 0, 0, 0))">
+	
+</div>
+
+</body></html>
