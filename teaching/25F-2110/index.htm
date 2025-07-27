@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://cse.buffalo.edu/~jmeng2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./page_files/analytics.js.download"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-3974203-1', 'auto'); ga('send', 'pageview');</script>
+    
+    <title>Foundations of Data Structures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../stylefiles/global.css">
+    <link rel="stylesheet" type="text/css" href="../../stylefiles/navigation.css">
+	<link rel="stylesheet" type="text/css" href="../../stylefiles/home.css">
+	<link rel="shortcut icon" href="../../personal/favicon.ico" />
+	<style>a{ TEXT-DECORATION:none}a:hover{TEXT-DECORATION:underline }</style>
+	<!-- <style>a{ TEXT-DECORATION:none }</style>-->   <!-- change style for hyperlink -->
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<style type="text/css">
+div img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+div img:hover{
+  transform: scale(1.8);
+}
+.underlinedist{ padding-bottom:3px; border-bottom:1px solid #000} 
+</style>
+
+
+<div class="central_body">
+	
+	
+	
+    <font size="5"><center><b>CSCE 2110 - Foundations of Data Structures</b></center></font>
+
+	
+    <p style="margin-top:5px;">
+	<center>
+	<font size="4"> <b>Fall 2025</b></font> &nbsp; &nbsp; 
+	<br>
+	</center>
+	</p>
+	
+	<HR>
+	
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Basic information:</b></font> <br>
+	</p>
+	
+	<p style="text-align:justify">
+	<ul>
+		<li>
+			<font size="4"> Instructor: Prof. Heng Fan (heng.fan@unt.edu)</font>
+		</li>
+		<li>
+			<font size="4"> Office: Discovery Park F284 </font>
+		</li>
+		<li>
+			<font size="4"> Phone: 940-565-3209 </font>
+		</li>
+		<li>
+			<font size="4"> Office hours: Monday 9:00-11:00 pm or by appointment</font>
+		</li>
+		<br>
+
+
+		<li><font size="4">Lecture (<font size="4">Syllabus: <a href=".\Syllabus_CSCE_2110.pdf" target="_blank"><font color="#0099ff">PDF</font></a></font>)</font>
+			<ul>
+				<li><font size="4">Time: Monday/Wednesday 1:00-2:20 pm</font></li>
+				<li><font size="4">Classroom: LIFE A204</font></li>
+			</ul>
+		</li>
+		
+		<br>
+
+		<li><font size="4">Recitation</font>
+			<ul>
+				<li><font size="4">Section 211: Wednesday 11:30-12:20 pm (room: NTDP F270)</font></li>
+				<li><font size="4">Section 213: Thursday 9:30-10:20 am (room: NTDP F210)</font></li>
+				<li><font size="4">Section 215: Wednesday 11:30-12:20 pm (room: NTDP F236)</font></li>
+			</ul>
+		</li>
+		  
+		<br>
+
+		<li><font size="4">Teaching Assistant (TA)</font>
+			<ul>
+				<li>
+				  <font size="4">Bing Fan:<br>
+				  Office hours: TBD (Office: F232)<br>
+				  E-mail: bingfan@my.unt.edu</font>
+				</li>
+				<li>
+				  <font size="4">Phongsiri Nirachornkul:<br>
+				  Office hours: TBD (Office: TBD)<br>
+				  E-mail: TBD</font>
+				</li>
+			</ul>
+		</li>
+	
+	</ul>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Course description</b></font>
+	</p>
+	
+	<p style="text-align:justify">
+	<font size="4">The aim of this course is to provide an introduction to the design and analysis of fundamental data
+	structures and algorithms. The lectures will emphasize the theoretical aspects, while the homework
+	assignments will focus more on the programming and hands-on experience, meant to reinforce the
+	theoretical aspects covered in lectures.</font>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Recommended textbooks</b></font> 
+	</p>
+	
+	<p style="text-align:justify">
+	<ul>
+		<li>
+			<font size="4"> <i>Data Structures & Algorithm Analysis in C++</i> (4th edition), by Mark Allen Weiss </font>
+		</li>
+		<li>
+			<font size="4"> <i>Introduction to Algorithms</i>, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein </font>
+		</li>
+	</ul>
+	</p>
+
+	<HR>
+	
+		<p style="margin-top:5px;">
+		<font size="4"> <b><font color="#FF0000">Announcements</font></b></font> 
+		</p>
+		
+		<ul>
+			<li>
+				<font size="4"> <b>11/28/2022:</b>Assignment 4 is out, due at 11:59pm on 12/09/2022. </font>
+			</li>
+			<li>
+				<font size="4"> <b>11/10/2022:</b>  <a href=".\project.htm" target="_blank"><font color="#0099ff">Course project</font></a> is out, due at 11:50pm on 12/09/2022. The</font>
+			</li>
+			<li>
+				<font size="4"> <b>11/08/2022:</b>Assignment 3 is out, due at 11:59pm on 11/22/2022. </font>
+			</li>
+			<li>
+				<font size="4"> <b>10/19/2022:</b> Midterm will be on 10/25/2022.</font>
+			</li>
+			<li>
+				<font size="4"> <b>10/04/2022:</b> Assignment 2 is out, due at 11:59pm on 10/25/2022.</font>
+			</li>
+			<li>
+				<font size="4"> <b>09/15/2022:</b> Assignment 1 is out, due at 11:59pm on 9/29/2022.</font>
+			</li>
+			<li>
+				<font size="4"> <b>08/28/2022:</b> The course website has been launched.</font>
+			</li>
+		</ul>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Schedule and class notes (<font color="#FF0000">being updated</b></font>)</b></font>
+	</p>
+	<p style="text-align:justify">
+	<table border = "0" cellspacing="5px">
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Date</b> </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Lecture</b> </font></td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Note</b> </font></td>
+		</tr> 
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 1</b> <br> 8/30 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Introduction and course overview <!--  [<a href="slides\3110-lecture 1-Introduction and course overview.pdf" target="_blank"><font color="#0099ff">Slides</font></a>] --></font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 9/1 </font></td>
+			<td width=500  style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Algorithm Analysis I <!-- [<a href="slides\3110-lecture 2-Algorithm Analysis I.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]  --></font></td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		 <tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 2</b> <br> 9/6 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Algorithm Analysis I (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 9/8 </font></td>
+			<td width=500  style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Algorithm Analysis I (cont.) </font></td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Quiz 1 </font></td>
+		</tr>
+		
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 3</b> <br> 9/13 </font></td>
+			<td width=500  style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Recurrence Relations </font></td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4">  9/15 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Recurrence Relations (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Assignment 1, due at 9/29/2022 </font></td> <!--Assignment 1, due at 9/21/2021-->
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 4</b> <br>9/20 </font></td>
+			<td width=500  style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Abstract Data Type </font></td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4">  9/22 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Abstract Data Type (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4">  -</font></td>
+		</tr>
+		
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 5</b> <br> 9/27 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Abstract Data Type (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> -</font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 9/29 </font></td>
+			<td width=500  style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Tree </font></td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Assignment 1 is due </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 6</b> <br> 10/4 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Tree (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Assignment 2, due at 10/25/2022</font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4">  10/6 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Tree (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Quiz 2</font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 7</b> <br> 10/11 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Tree (cont.) <br> Splay Tree</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 10/13 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Splay Tree (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 8</b> <br> 10/18 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Priority Queues</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 10/20 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Priority Queues (cont.)</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 9</b> <br> 10/25 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<font size="4" color="red"> <b>Midterm Exam</b></font></font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Assignment 2 is due </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 10/27 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Hashing </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 10</b> <br> 11/1 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Sorting</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 11/3 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Sorting (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 11</b> <br> 11/8 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Sorting (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Assignment 3, due at 11/22/2022 </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 11/10 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Graph I </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <a href=".\project.htm" target="_blank"><font color="#0099ff">Course project</font></a> is out </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 12</b> <br> 11/15 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Graph I (cont.) <br> Graph II</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 11/17 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Graph II (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Quiz 4 </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 13</b> <br> 11/22 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Graph II (cont.) </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 11/24 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				<font size="4" color="red"> <b>Thanksgiving (no class)</b></font> </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 14</b> <br> 11/29 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Graph III </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Assignment 4, due at 12/09/2022 </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 12/01 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Review</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 15</b> <br> 12/06 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Question-answering </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 12/08 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Pre-finals </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+
+		<tr>
+			<td width=100  style='width:80.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 16</b> <br> 12/15 </font></td>
+			<td width=500 style='width:480.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" color="red"> <b>Final Exam (10:30 a.m. - 12:30 p.m.)</b></font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#EAEDED;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr> 
+
+		<!--
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 10/7 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Splay Tree (cont.) [<a href="slides\3110-lecture 8-Splay Tree.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 8</b> <br> 10/12 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Priority Queues [<a href="slides\3110-lecture 9-Priority Queues.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> -</font></td>
+		</tr>
+		
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 10/14 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Priority Queues (cont.) [<a href="slides\3110-lecture 9-Priority Queues.pdf" target="_blank"><font color="#0099ff">Slides</font></a>] and Review</font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 9</b> <br> 10/19 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Hashing [<a href="slides\3110-lecture 10-Hashing.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> -</font></td>
+		</tr>
+		
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 10/21 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" color="red"> <b>Mid-term Exam</b></font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 10</b> <br> 10/26 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Sorting [<a href="slides\3110-lecture 11-Sorting.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Assignment 3, due at 11/2/2021</font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 10/28 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Sorting (cont.) [<a href="slides\3110-lecture 11-Sorting.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Quiz 3 </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 11</b> <br> 11/2 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Sorting (cont.) [<a href="slides\3110-lecture 11-Sorting.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 11/4 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Graph I [<a href="slides\3110-lecture 12-Graph I.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 12</b> <br> 11/9 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Graph I (cont.) [<a href="slides\3110-lecture 12-Graph I.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 11/11 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Graph II [<a href="slides\3110-lecture 13-Graph II.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Quiz 4 </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 13</b> <br> 11/16 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Graph II (cont.) [<a href="slides\3110-lecture 13-Graph II.pdf" target="_blank"><font color="#0099ff">Slides</font></a>]</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Assignment 4, due at 12/2/2021 </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 11/18 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Graph III [<a href="slides\3110-lecture 14-Graph III.pdf" target="_blank"><font color="#0099ff">Slides</font></a>] </font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 14</b> <br> 11/23 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Graph III (cont.) [<a href="slides\3110-lecture 13-Graph II.pdf" target="_blank"><font color="#0099ff">Slides</font></a>] and Review</font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 11/25 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Thanksgiving (no class)</font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 15</b> <br> 11/30 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 
+				Question-answering </font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100 style='width:80.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> 12/2 </font></td>
+			<td width=500  style='width:480.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> Reading Day</font></td>
+			<td width=200 style='width:180.0pt;background:#EBF5FB;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr>
+		
+		<tr>
+			<td width=100  style='width:80.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> <b>Week 16</b> <br> 12/9 </font></td>
+			<td width=500 style='width:480.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4" color="red"> <b>Final Exam</b></font>
+			</td>
+			<td width=200 style='width:180.0pt;background:#FEF9E7;padding:2.25pt 2.25pt 2.25pt 2.25pt'><font size="4"> - </font></td>
+		</tr> -->
+		
+	</table>
+	</p>
+	
+	<HR>
+	
+	<p style="margin-top:5px;">
+	<font size="4"> <b>Grading policy</b></font> 
+	</p>
+	
+	<p style="text-align:justify">
+	<ul>
+		<li>
+			<font size="4"> Quizzes: 20% </font>
+		</li>
+		<li>
+			<font size="4"> Assignments: 40%</font>
+		</li>
+		<li>
+			<font size="4"> Midterm exam (closed book): 15%</font>
+		</li>
+		<li>
+			<font size="4"> Final exam (closed book): 20%</font>
+		</li>
+		<li>
+			<font size="4"> Attendance: 5%</font>
+		</li>
+		<li>
+			<font size="4"> Course project (optional): 5% (bonus)</font>
+		</li>
+		
+	</ul>
+	</p>
+	
+	<HR>
+	
+</div>
+
+</body></html>
